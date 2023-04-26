@@ -24,6 +24,9 @@ read input
 				echo $(date) >> log$i.txt
 			done
 			fi;;
-
+		--help)
+		echo "Wpisz --date, aby wyświetlić aktualną datę"
+		echo "Wpisz --logs, a następnie, gdy zostaniesz zapytany, wpisz liczbę plików log, która ma zostać utworzona (pozostaw puste, aby wygenerować 100)"
+		echo "Wpisz --help, aby wyświetlić pomoc"
         *) echo "Nie ma takiej opcji"
     esac
